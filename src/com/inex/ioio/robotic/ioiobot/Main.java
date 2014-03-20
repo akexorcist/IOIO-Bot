@@ -11,6 +11,8 @@ import android.os.Bundle;
 import android.graphics.PixelFormat;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewTreeObserver;
+import android.view.ViewTreeObserver.OnGlobalLayoutListener;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.View.OnTouchListener;
@@ -33,6 +35,7 @@ public class Main extends IOIOActivity {
 		
 		layoutLeft = (LinearLayout)findViewById(R.id.layoutLeft);
 		layoutRight = (LinearLayout)findViewById(R.id.layoutRight);
+		
 	}
 	
 	public void onPause() {
